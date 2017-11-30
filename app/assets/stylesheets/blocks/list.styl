@@ -1,0 +1,81 @@
+.list{
+  flex: 0 63%;
+  display: flex;
+  justify-content: space-around;
+  &__area{
+    text-align left
+    pre{
+      display: block;
+      padding: 9.5px;
+      margin: 0 0 10px;
+      font-size: 10px;
+      line-height: 1.42857143;
+      color: #333;
+      width:  400px
+      word-break: break-all;
+      word-wrap: break-word;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: auto
+      max-height: 400px
+    }
+  }
+  &__items{
+    width: 300px
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  &__item{
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align left
+    height: 40px
+    padding: 10px;
+    padding-left: 40px
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+    &-count{
+      position: absolute
+      top: 5px
+      right 29px
+      font-size 10px
+    }
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    &-size{
+      position: absolute
+      right: 29px;
+      top: 21px;
+      font-size 10px
+    }
+    &-close{
+      position: absolute;
+      top: 8px;
+      right: 13px;
+      font-size: 18px;
+      color: rgba(255, 0, 0, 0.57);
+      cursor: pointer;
+      background-color white
+      border: none
+      padding: 0
+    }
+  }
+}
+
+@media(max-width: 1580px){
+  .dragArea_item{
+    padding-left: 15px
+  }
+  .drag__area {
+
+    pre{
+      width: 360px
+    }
+  }
+}

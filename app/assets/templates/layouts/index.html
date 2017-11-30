@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drag and Drop</title>
+    <script src="https://html5-demos.appspot.com/static/filesystem/filer.js/demos/js/dnd.js"></script>
+</head>
+<body id='body'>
+<div class="index">
+    <div class="index__header">
+        <div class="title">Drag and Drop</div>
+    </div>
+    <div class="index__wrapper" >
+        <div class="list dn" id="list" >
+            <div class="list__area" >
+                <pre id="listText" ></pre>
+                <a class="button"  id="downloadAnchorElem">Скачать JSON</a>
+            </div>
+            <div>
+                <h3>Полный список файлов</h3>
+                <div class="list__items" id="listItems"></div>
+            </div>
+        </div>
+        <div class="load" id="load-block">
+            <div class="load__text">
+                <p>Для загрузки,</br> перетащите файл в формате json сюда.</p>
+                <p>Либо загрузите его</p>
+                <form name="upload" class="form">
+                    <input class="form_button" type="file" name="file" value="Загрузить">
+                    <input class="button" type="submit" value="Загрузить">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
